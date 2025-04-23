@@ -1,102 +1,67 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
-  "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
-  },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "introduction",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "SQD Portal API",
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/Symbol_wh-bg.svg",
+    "light": "/Symbol_bl-bg.svg"
   },
+  "favicon": "/Symbol_bl-bg.svg",
+  "colors": {
+    "primary": "#000000",
+    "light": "#FFFFFF",
+    "dark": "#000000"
+  },
+  "theme": "maple",
   "navbar": {
     "links": [
       {
+        "type": "link",
+        "label": "Website",
+        "href": "https://sqd.ai"
+      },
+      {
+        "type": "link",
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "https://t.me/HydraDevs"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Powered by SQD Network",
+      "href": "https://network.subsquid.io"
     }
   },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+  "topbarLinks": [],
+  "topbarCtaButton": {
+    "name": "",
+    "url": ""
+  },
+  "navigation": {
+    "languages": [],
+    "versions": [],
+    "groups": [
+      {
+        "group": "Getting Started",
+        "pages": [
+        "api/introduction",
+        "api/endpoint/post-stream"
+        ]
+      },
+      {
+        "group": "Endpoints",
+        "pages": [
+          "api/endpoint/get-datasets",
+          "api/endpoint/get-metadata",
+          "api/endpoint/get-head",
+          "api/endpoint/get-finalized-head",
+          "api/endpoint/post-finalized-stream",
+          "api/endpoint/get-state"
+        ]
+      }
+    ]
+  },
+  "footerSocials": {
+    "twitter": "https://twitter.com/hellosqd",
+    "github": "https://github.com/subsquid"
   }
 }
