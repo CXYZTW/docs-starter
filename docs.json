@@ -11,54 +11,132 @@
     "light": "#FFFFFF",
     "dark": "#000000"
   },
-  "theme": "maple",
+  "theme": "aspen",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "GETTING STARTED",
+            "icon": "https://mintlify-assets.b-cdn.net/compass-2.svg",
+            "pages": [
+              "index",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "LEARN MORE",
+            "icon": "https://mintlify-assets.b-cdn.net/star-2.svg",
+            "pages": [
+              "essentials/markdown",
+              "essentials/code"            ]
+          }
+        ]
+      },
+      {
+        "tab": "SDK",
+        "groups": [
+          {
+            "group": "SDK Documentation",
+            "pages": [
+              "sdk/introduction",
+              "sdk/installation",
+              "sdk/usage"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Network",
+        "groups": [
+          {
+            "group": "Network Overview",
+            "pages": [
+              "network/introduction",
+              "network/architecture",
+              "network/nodes"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Cloud",
+        "groups": [
+          {
+            "group": "Cloud Services",
+            "pages": [
+              "cloud/introduction",
+              "cloud/deployment",
+              "cloud/monitoring"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Protocols Hub",
+        "groups": [
+          {
+            "group": "Protocols Hub",
+            "pages": [
+              "protocols-hub/index"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "API Documentation",
+            "pages": [
+              "api-reference/introduction"
+            ]
+          },
+          {
+            "group": "Endpoint Examples",
+            "pages": [
+              "api-reference/endpoint/get",
+              "api-reference/endpoint/create",
+              "api-reference/endpoint/delete",
+              "api-reference/endpoint/webhook"
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Supported chains",
+          "href": "https://docs.sqd.ai/subsquid-network/reference/networks/",
+          "icon": "book-open-cover"
+        },
+        {
+          "anchor": "Community",
+          "href": "https://t.me/HydraDev",
+          "icon": "slack"
+        },
+        {
+          "anchor": "Blog",
+          "href": "https://sqd.dev/blog",
+          "icon": "newspaper"
+        }
+      ]
+    }
+  },
   "navbar": {
     "links": [
       {
-        "type": "link",
-        "label": "Website",
-        "href": "https://sqd.ai"
-      },
-      {
-        "type": "link",
         "label": "Support",
-        "href": "https://t.me/HydraDevs"
+        "href": "https://t.me/HydraDev"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Powered by SQD Network",
-      "href": "https://network.subsquid.io"
+      "label": "Dashboard",
+      "href": "https://dashboard.mintlify.com"
     }
-  },
-  "topbarLinks": [],
-  "topbarCtaButton": {
-    "name": "",
-    "url": ""
-  },
-  "navigation": {
-    "languages": [],
-    "versions": [],
-    "groups": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "api-reference/introduction",
-        "api-reference/endpoint/post-stream"
-        ]
-      },
-      {
-        "group": "Endpoints",
-        "pages": [
-          "api-reference/endpoint/get-datasets",
-          "api-reference/endpoint/get-metadata",
-          "api-reference/endpoint/get-head",
-          "api-reference/endpoint/get-finalized-head",
-          "api-reference/endpoint/post-finalized-stream",
-          "api-reference/endpoint/get-state"
-        ]
-      }
-    ]
   },
   "footerSocials": {
     "twitter": "https://twitter.com/hellosqd",
